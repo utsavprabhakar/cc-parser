@@ -31,6 +31,8 @@ transport      798.75      4
 travel       10484.00      2
 ```
 
+![alt text](https://imgur.com/a/QdY6mGz)
+
 ## 🚀 Features
 
 - Read Axis Bank Credit card PDF statements (unlocked!)
