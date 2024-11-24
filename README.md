@@ -6,7 +6,7 @@
 
 A Python application to analyze Axis Bank credit card statements.
 
-Example Console output
+**Example Console output**
 ```
 Analyzing statement: data/statements/AXISMB_24-11-2024.pdf
 Parsing transactions...
@@ -31,7 +31,8 @@ transport      798.75      4
 travel       10484.00      2
 ```
 
-![alt text](https://imgur.com/a/QdY6mGz)
+**Example Excel report Screenshot**
+![Excel report screenshot](https://imgur.com/npggjm8)
 
 ## 🚀 Features
 
