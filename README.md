@@ -32,7 +32,7 @@ travel       10484.00      2
 ```
 
 **Example Excel report Screenshot**
-![Excel report screenshot](https://imgur.com/npggjm8)
+![Excel report screenshot](./assets/excel_report_screenshot.png)
 
 ## 🚀 Features
 
