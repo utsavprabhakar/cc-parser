@@ -2,3 +2,6 @@ data/*
 *.xlsx
 *.csv
 *.pdf
+*.pyc
+*.DS_Store
+*.venv

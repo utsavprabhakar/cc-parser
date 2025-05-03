@@ -7,10 +7,10 @@ from datetime import datetime
 # Add the project root directory to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.parsers.axis_parser import AxisBankStatementParser
+from src.parsers.axis_saving_parser import AxisSavingStatementParser
 
 def analyze_statement(pdf_path: str) -> None:
-    parser = AxisBankStatementParser()
+    parser = AxisSavingStatementParser()
     
     try:
         print(f"\nAnalyzing statement: {pdf_path}")
@@ -18,6 +18,11 @@ def analyze_statement(pdf_path: str) -> None:
         # Parse transactions
         print("Parsing transactions...")
         transactions = parser.parse_statement(pdf_path)
+
+        # Step 1: Create multiple parsers in parsers directory
+        # Step 2: Parse all statements in the same directory
+        # Step 3: Combine all transactions into a single list
+        # Step 4: Analyze the combined transactions 
         
         if not transactions:
             print("No transactions found in the statement.")

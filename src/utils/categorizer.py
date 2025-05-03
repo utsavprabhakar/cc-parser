@@ -18,7 +18,13 @@ class TransactionCategorizer:
                 r'ola',
                 r'metro',
                 r'railway',
-                r'irctc'
+                r'irctc',
+                r'metro',
+                r'rapido',
+                r'petrol',
+                r'fuel',
+                r'uber',
+                r'ola'
             ],
             'health_wellness': [
                 r'monalisa pharma',
@@ -34,13 +40,18 @@ class TransactionCategorizer:
                 r'retail',
                 r'shop',
                 r'store',
-                r'market'
+                r'market',
+                r'amazon',
+                r'adishwar super market'
             ],
             'subscriptions_services': [
                 r'claude\.ai subscription',
                 r'setupvpn\.com',
                 r'urbanclap',
-                r'cred'
+                r'cred',
+                r'ott',
+                r'netflix',
+                r'prime'
             ],
             'donations_charity': [
                 r'milaap social',
@@ -64,13 +75,41 @@ class TransactionCategorizer:
             'insurance': [
                 r'icici lombard general',
                 r'insurance',
-                r'policy'
+                r'policy',
+                r'iciciprude'
             ],
             'home_utilities': [
                 r'my gate',  # Society maintenance
                 r'maintenance',
                 r'electricity',
-                r'water'
+                r'water',
+                r'bill',
+                r'recharge',
+                r'google',
+                r'electric',
+                r'water',
+                r'apple'
+            ],
+            'investments': [
+                r'mutual',
+                r'sbi',
+                r'hdfc',
+                r'axis',
+                r'njindia',
+                r'icici',
+                r'nse' 
+            ],
+            'salary': [
+                r'sal',
+                r'salary',
+                r'amazon'
+            ],
+            'rent': [
+                r'rent',
+                r'house'
+            ],
+            'cred_bills': [
+                r'cred'
             ]
         }
     
