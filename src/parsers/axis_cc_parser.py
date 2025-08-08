@@ -31,13 +31,14 @@ class AxisCreditCardStatementParser:
         if match:
             date_str, description, amount, txn_type = match.groups()
             try:
-                # date = datetime.strptime(date_str, "%d %b '%y")
+                # Parse date string like "31 Oct '24" to datetime
+                date = datetime.strptime(date_str, "%d %b '%y")
                 amount_clean = float(amount.replace(',', ''))
 
                 # print(self.categorizer.categorize(description))
                 
                 return Transaction(
-                    date=date_str,
+                    date=date,
                     description=description.strip(),
                     amount=amount_clean,
                     transaction_type=txn_type,
