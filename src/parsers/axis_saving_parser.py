@@ -37,6 +37,9 @@ class AxisSavingStatementParser:
         try:
             date_str, description, debit_str, credit_str, balance_str = match.groups()
             
+            # Parse date string like "31-10-2024" to datetime
+            date = datetime.strptime(date_str, "%d-%m-%Y")
+            
             # Process the description
             processed_description = self._process_description(description)
             
@@ -54,7 +57,7 @@ class AxisSavingStatementParser:
             category = self.categorizer.categorize(processed_description)
             
             return Transaction(
-                date=date_str,
+                date=date,
                 description=processed_description,
                 amount=amount,
                 transaction_type=transaction_type,
