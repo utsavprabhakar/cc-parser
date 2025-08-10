@@ -6,3 +6,13 @@ data/*
 *.DS_Store
 *.venv
 *.py[cod]
+
+# Python cache directories
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
